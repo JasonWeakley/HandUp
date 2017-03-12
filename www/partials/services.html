@@ -1,0 +1,36 @@
+<div class="btn-group">
+	<button type="button" class="btn btn-default" aria-label="Left Align">
+	  <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+	</button>
+	<button type="button" class="btn btn-default" aria-label="Left Align">
+	  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	</button>
+</div>
+
+
+<form class="well center-block navbar-form navbar-left">
+  <div class="form-group">
+    <input type="text" class="center-block form-control" style="max-width:400px" placeholder="Zip Code">
+  </div>
+  <button type="submit" class="center-block btn btn-default">Submit</button>
+  
+  <!-- List of Categories will appear here -->
+  <!-- GET the name and ID of each category, display the name and then pass the ID to the next view to populate a list of all the categiries within a Zip Code on the next view -->
+	<div ng-repeat="category in categories" style="margin-top: 10px">
+		<div class="well center-block" style="max-width: 400px; margin-top: 0px; margin-bottom: 8px">
+			{{ category.Name }}
+		</div>
+	</div>
+
+
+
+	<div class="well center-block" style="max-width:400px; margin-bottom: 1px; margin-top: 9px">
+		Shelter
+	</div>
+	<div class="well center-block" style="max-width:400px; margin-bottom: 1px; margin-top: 0px">
+		Food Assistance
+	</div>
+	<div class="well center-block" style="max-width:400px; margin-bottom: 1px; margin-top: 0px">
+		Clothing
+	</div>
+</form>
